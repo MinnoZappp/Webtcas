@@ -1,0 +1,62 @@
+.navbar-menu {
+    font-size: 15px;
+    margin-top: 8px;
+    margin-left: 5px;
+    padding: 5px;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+}
+.navbar-menu.active:after {
+    background: none scroll 0 0 #ffffff;
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+}
+.navbar-menu:after {
+    transition: all ease-in-out .5s;
+    background: none repeat scroll 0 0 #fffecf;
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+}
+.navbar-menu:hover {
+    text-decoration: none;
+    color: #ff8a8a;
+
+}
+.navbar-menu:hover:after {
+    text-decoration: none;
+    width: 100%;
+}
+.navbar-brand{
+    font-size: 25px;
+}
+
+/*table page4*/
+.headerevent{
+    background-color: rgb(187, 42, 66);
+    font-size: 20px;
+    color: white;
+}
+/*table page4*/
+.headbranch2{
+    background-color: pink;
+    font-size: 20px;
+}
+
+
+/*table page4*/
+.headerevent2{
+    background-color: rgb(71, 119, 83);
+    font-size: 20px;
+    color: white;
+}
+/*table page4*/
+.headbranch{
+    background-color: rgb(136, 187, 149);
+    font-size: 20px;
+    color: white;
+}

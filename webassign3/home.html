@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <title>HOME</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-danger">
+        <!-- Content -->
+        <class class="container-fluid">
+            <!-- Brand -->
+            <a href="home.html" class="navbar-brand">TCAS.com</a> <!--collapseการพับเก็บไว้-->
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarToggle"><!--ต้องมีการระบุid"#navbarToggle"ปลายทางที่เราต้องการเปิดเมนูย่อยออกมา-->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbarToggle">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="navbar-menu active"href="home.html" class="nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-menu"href="page2.html" class="nav-link">TCAS DETAILS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-menu"href="page3.html" class="nav-link">GAT,PAT&9วิชาสามัญ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-menu"href="page4.html" class="nav-link">กสพท</a>
+                    </li>   
+                    
+                </ul>
+            </div>
+             
+            <div>
+                <button class="btn btn-primary" data-bs-target="#showForm" data-bs-toggle="modal">Register</button>
+
+                <div class="modal fade" id="showForm">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <h5 class="modal-title">ลงทะเบียน</h5>
+                                <button class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label>ชื่อ</label>
+                                    <input type="text" placeholder="กรุณาป้อนชื่อ" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>นามสกุล</label>
+                                    <input type="text" placeholder="กรุณาป้อนนามสกุล"class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>อีเมล</label>
+                                    <input type="email" placeholder="กรุณาป้อนอีเมล" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>รหัสผ่าน</label>
+                                    <input type="password" placeholder="กรุณาป้อนรหัสผ่าน" class="form-control">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">ยกเลิก</button>
+                            <button class="btn btn-success" data-bs-dismiss="modal">บันทึกข้อมูล</button>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        
+    </nav>
+    <div class="container">
+        <div class="row"> 
+            <div class="col-lg-12 col-md-12 col-sm-12 m-auto ">
+                <!-- การสร้าง Carousel -->
+                <div class="carousel slide" id="slider1" data-bs-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <button  class="active" data-bs-target="#slider1" data-bs-slide-to="0"></button>
+                            <button  data-bs-target="#slider1" data-bs-slide-to="1"></button>
+                            <button  data-bs-target="#slider1" data-bs-slide-to="2"></button>
+                            
+                        </ol>
+                        <!--เนื้อหาในสไลด์-->
+                        <div class="carousel-inner">
+                                <!--จำนวนสไลด์ที่จะสร้างขึ้นมา-->
+                            <div class="carousel-item active">
+                                <img src="img/tcas1.png" class="d-block w-100">
+                                
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/tcas2.png" class="d-block w-100">
+                                
+                            </div>
+                            
+                            <div class="carousel-item">
+                                <img src="img/tcas3.png" class="d-block w-100">
+                                
+                            </div>
+                        </div>
+                        <!-- ควบคุมการ Slide ผ่านปุ่ม -->
+                        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#slider1">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#slider1">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-top: 20px;">
+        <div class="row"> 
+            <div class="col-lg-12 col-md-12 col-sm-12 m-auto ">
+                <div class="card border-danger">
+                    <div class="card-body">
+                        <h1 class="card-title text-primary">TCAS65 คืออะไร?</h1>
+                        <h6 class="card-subtitle mb-2 text-muted">เผยแพร่ 06/09/2021</h6>
+                        <p class="card-text fw-normal">TCAS65 คือ ระบบที่ออกแบบโดยที่ประชุมอธิการบดีแห่งประเทศไทย (ทปอ.) สำหรับคัดเลือกบุคคลเข้าศึกษาต่อในระดับมหาวิทยาลัย ปีการศึกษา 2565 <br>ปัจจุบันมีมหาวิทยาลัยที่อยู่ในระบบทั้งหมด 82 แห่ง โดยจะดำเนินการภายใต้ระบบ myTCAS ในการจัดการสิทธิ์การสมัครทั้ง 4 รอบ</p>
+                        <ul><li>TCAS ย่อมาจาก Thai University Center Admission System</li>
+                        <li>65 ย่อมาจาก ปีการศึกษา 2565 (โดยเลยที่ต่อท้าย คือ ปีการศึกษาของเด็กรุ่นนั้นๆ)</li></ul>
+                        
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container" style="margin-top: 20px;">
+        <div class="row"> 
+            <div class="col-lg-12 col-md-12 col-sm-12 m-auto ">
+                <div class="card border-danger">
+                    <br>
+                    <h1 class="card-title text-danger ">&nbsp;&nbsp;รูปแบบการสอบ มีทั้งหมดกี่รอบ?</h1>
+                    <img src="img/tcas4.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title text-danger">TCAS65 มีทั้งหมด 4 รอบ 4 รูปแบบด้วยกัน</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">เผยแพร่ 06/09/2021</h6>
+                        <p class="card-text">
+                            
+                            <ul><li>รอบที่ 1 Portfolio : รอบแฟ้มสะสมผลงาน สำหรับน้องๆ DEK65 ที่มีทักษะ ความสามารถและคุณสมบัติพิเศษตรงตามความต้องการของมหาวิทยาลัยรวมถึงผลการเรียนที่ดีด้วย</li>
+                            <br>
+                            <li>รอบที่ 2 Quota : รอบสำหรับนักเรียนในโครงการพิเศษและคนที่ภูมิลำเนาอยู่ในพื้นที่ตามเกณฑ์มหาวิทยาลัยกำหนดที่มีความสามารถพิเศษ ไม่ว่าจะเป็นความสามารถด้านการเรียน ด้านกีฬา ด้านดนตรี ด้านศิลปะ ฯลฯ</li>
+                            <br>
+                            <li>รอบที่ 3 Admission : รอบรับตรงร่วมกัน พิจารณาคะแนนสอบล้วนๆ เปิดรับสมัครพร้อมกันทั้งประเทศ เกณฑ์การรับสมัครเหลือเพียงรูปแบบ 3.1 มหาวิทยาลัยกำหนดเท่านั้น</li>
+                            <br>
+                            <li>รอบที่ 4 Direct Admission : รอบรับตรงอิสระ ซึ่งถือเป็นรอบเก็บตกสำหรับน้องๆที่ยังไม่ได้มหาวิทยาลัยที่ถูกใจ หรือยังไม่มีที่เรียน ซึ่งจำนวนที่นั่งที่เปิดรับค่อนข้างน้อย และไม่ได้เปิดรับทุกมหาวิทยาลัย ทุกคณะ น้องๆจะต้องติดตามข่าวสารจากทางมหาวิทยาลัยเพิ่มเติมนะคะ</li></ul>
+                            
+                        <h5 class="card-text text-danger">โดยTCAS65จะไม่มีการใช้คะแนน O-NET ในการคัดเลือกทุกรูปแบบของทุกสถาบันที่ร่วมรับในระบบ TCAS</h5></p>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </div>
+    
+    <div class="container" style="margin-top: 40px;">
+        <div class="row"> 
+            <div class="col-lg-12 col-md-12 col-sm-12 m-auto ">
+    <!-- Card Group -->
+                <div class="card-group ">
+        <!-- Card 1 -->
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title text-primary">5 เทคนิคเตรียมสอบ GAT-PAT ให้ได้คะแนนดี #dek64 ไม่ควรพลาด</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">เผยแพร่ 11/03/2021</h6>
+                        <p class="card-text">จัดสอบกันเป็นประจำทุกปีสำหรับการสอบ GAT วิชาความถนัดทั่วไป และ PAT ซึ่งน้องๆหลายคนก็อาจจะตื่นเต้นที่กำลังจะได้สอบ บทความนี้ก็เลยจะมาแนะนำ 5 เทคนิคเตรียมตัวก่อนสอบ GAT-PAT </p>
+                        <a href="https://intrend.trueid.net/article/5-เทคนิคเตรียมสอบ-gat-pat-ให้ได้คะแนนดี-dek-64-ไม่ควรพลาด-trueidintrend_211268" class="btn btn-success">อ่านบทความ</a>
+                    </div>
+                </div>
+        <!-- Card 2 -->
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title text-primary">แจก! ตารางอ่านหนังสือ สำหรับเด็ก 65</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">เผยแพร่ 04/07/2021</h6>
+                        <p class="card-text">ตารางอ่านหนังสือ ปีการศึกษา 2565 สำหรับน้อง ๆ ม.ปลาย ที่อยากวางแผนการเรียนให้ประสบความสำเร็จ</p>
+                        <a href="https://www.smartmathpro.com/read-book/?utm_source=content&utm_medium=referral&utm_campaign=tcas65" class="btn btn-success">อ่านบทความ</a>
+                    </div>
+                </div>
+        <!-- Card-3 -->
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title text-primary">เทคนิคการทำPortfolioให้ถูกต้องและโดนใจกรรมการคัดเลือก</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">เผยแพร่ 09/07/2020</h6>
+                        <p class="card-text">Portfolioหรือแฟ้มสะสมผลงานเป็นอีกหนึ่งสิ่งที่สำคัญที่ใช้ยื่นเข้ามหาวิทยาลัยในระบบTCASรอบที่1</p>
+                        <a href="https://www.triam-ent.com/เทคนิคการทำ-portfolio-ให้ถูกต้อง/" class="btn btn-success">อ่านบทความ</a>
+                    </div>
+                </div>
+        <!-- Card 4 -->
+                <div class="card">
+                     <div class="card-body">
+                        <h4 class="card-title text-primary">เช็กลิสต์ เทคนิคเก็บแต้ม 9 วิชาสามัญ สไตล์เด็ก กสพท</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">เผยแพร่ 09/12/2018</h6>
+                        <p class="card-text">รวมเทคนิคเก็บแต้ม9วิชาสามัญ สไตล์เด็ก กสพท</p>
+                        <a href="https://www.boostup.in.th/content/91" class="btn btn-success">อ่านบทความ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
